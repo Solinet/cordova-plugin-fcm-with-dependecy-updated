@@ -18,7 +18,6 @@ var __decorate =
         return c > 3 && r && Object.defineProperty(target, key, r), r
     }
 import { Injectable } from '@angular/core'
-import { Plugin } from '@ionic-native/core'
 import { Subject } from 'rxjs'
 
 function FCM() {}
@@ -67,18 +66,6 @@ FCM.prototype.subscribeToTopic = function (topic) {
 FCM.prototype.unsubscribeFromTopic = function (topic) {
     return window.FCM.unsubscribeFromTopic(topic)
 }
-FCM = __decorate(
-    [
-        Plugin({
-            pluginName: 'FCM',
-            plugin: 'cordova-plugin-fcm-with-dependecy-updated',
-            pluginRef: 'FCM',
-            repo: 'https://github.com/andrehtissot/cordova-plugin-fcm-with-dependecy-updated',
-            platforms: ['Android', 'iOS']
-        }),
-        Injectable()
-    ],
-    FCM
-)
+FCM = __decorate([Injectable()], FCM)
 
 export { FCM }

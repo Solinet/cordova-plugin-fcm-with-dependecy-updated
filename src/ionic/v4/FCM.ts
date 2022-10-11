@@ -11,13 +11,13 @@ declare namespace window {
 }
 
 /** @copyFrom typings/FCMPlugin.d.ts FCMPlugin */
-@Plugin({
+/*@Plugin({
     pluginName: 'FCM',
     plugin: 'cordova-plugin-fcm-with-dependecy-updated',
     pluginRef: 'FCM',
     repo: 'https://github.com/andrehtissot/cordova-plugin-fcm-with-dependecy-updated',
     platforms: ['Android', 'iOS'],
-})
+})*/
 @Injectable()
 export class FCM {
     /** @copyFrom typings/FCMPlugin.d.ts FCMPlugin clearAllNotifications */
